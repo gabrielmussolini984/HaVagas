@@ -56,6 +56,7 @@ const init = async () => {
   //const categoria = 'Time de Engenharia'
   //await db.run(`insert into categorias (categoria) values('${categoria}')`);
 }
+// Comment
 init();
 // Server Running
 const PORT = 3000;
