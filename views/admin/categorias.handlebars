@@ -1,0 +1,18 @@
+<section class="panel color2">
+  <div class="inner columns">
+    <div class="content span-3">
+      <h2 class="major">Admnistrar Categorias</h2>
+      <a href="categorias/nova" class="button primary color2">Nova Categorias</a>  
+      {{#each categorias}} 
+      <a href="categorias/editar/{{id}}" class="button">{{categoria}}</a>
+      {{else}}
+      <a href="#" class="button">Sem categoria no momento</a>
+      {{/each}}
+    </div>
+    <div class="content span-1">
+      <ul class="actions">
+        <li><a href="/admin" class="button primary color2 circle icon solid fa-angle-left">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</section>

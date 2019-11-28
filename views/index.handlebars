@@ -1,0 +1,24 @@
+{{#each categorias}}
+<section class="panel color2">
+  <div class="inner columns aligned">
+    <div class="content span-3">
+      <h2 class="major ">{{categoria}}</h2>
+      {{#each vagas}} 
+      <a href="vaga/{{id}}" class="button">{{titulo}}</a>
+      {{else}}
+      <a href="#" class="button">Sem Vagas no momento</a>
+      {{/each}}
+    </div>
+  </div>
+</section>
+{{else}}
+<section class="panel color2-alt">
+  <div class="inner columns aligned">
+    <div class="content span-3">
+      <a href="#" class="button">Sem Categorias no momento</a>
+    </div>
+  </div>
+</section>
+
+
+{{/each}}

@@ -1,0 +1,36 @@
+<section class="panel color2">
+  <div class="inner columns">
+  <div class="span-5">
+    <h2 class="major">Preencha todos campos para criar uma nova vaga:</h2>
+    <form method="post">
+      <div class="fields">
+        <div class="field third">
+          <label for="titulo">Titulo</label>
+          <input type="text" name="titulo" id="demo-name" value=""  placeholder="Digite o titulo da vaga" />
+        </div>
+        <div class="field third">
+          <label for="categoria">Categoria</label>
+          <div class="select-wrapper">
+            <select name="categoria" id="demo-category">
+              {{#each categorias}}
+              <option value="{{id}}">{{categoria}}</option>
+              {{/each}}
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="descricao">Descrição</label>
+          <textarea name="descricao" id="demo-message" placeholder="Digite a Descrição da Vaga" rows="2"></textarea>
+        </div>
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Criar Vaga" class="primary color2" /></li>
+        <li><a href="/admin/vagas" class="button button1">voltar</a></li>
+  
+        
+      
+      </ul>
+    </form>
+  </div>
+  </div>
+</section>
