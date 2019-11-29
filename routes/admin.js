@@ -1,8 +1,9 @@
 const express = require('express'); 
 const router = express.Router();
 const sqlite = require('sqlite');
+const path = require('path');
 
-const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), {Promise});
+const dbConnection = sqlite.open('banco.sqlite', {Promise});
 // Routes Admin
 router.get('/', (req, res)=>{
   res.render('admin/home');
