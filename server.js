@@ -12,6 +12,7 @@ const app = express();
 const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), {Promise});
 
 // HandleBars Config
+app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 // BodyParser
