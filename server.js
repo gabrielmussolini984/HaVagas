@@ -9,7 +9,7 @@ const admin = require('./routes/admin');
 const app = express();
 
 // Connect DB
-const dbConnection = sqlite.open('banco.sqlite', {Promise});
+const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), {Promise});
 
 // HandleBars Config
 app.engine('handlebars', handlebars());
