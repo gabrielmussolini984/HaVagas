@@ -56,11 +56,10 @@ const init = async () => {
   //const categoria = 'Time de Engenharia'
   //await db.run(`insert into categorias (categoria) values('${categoria}')`);
 }
-// Comment
 init();
 // Server Running
-const PORT = 3000;
-app.listen(PORT, (err)=>{
+const port = process.env.PORT || 3000;
+app.listen(port, (err)=>{
   if (err) console.log('Error');
   console.log('Server is online in port 3000');
 });
