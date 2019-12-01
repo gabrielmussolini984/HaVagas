@@ -11,6 +11,19 @@ const app = express();
 // Connect DB
 const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), {Promise});
 
+
+
+// Verificando de onde é o acesso.
+app.use('/admin', (req,res,next)=>{
+  if (req.hostname == 'localhost'){
+    next();
+  }else{
+   res.send('Acesso não permitido');
+  }
+    
+    
+})
+
 // HandleBars Config
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
