@@ -11,7 +11,8 @@ essa pode ser uma solução viavel.O banco de dados utilizados foi o SQLITE por 
 
 
 
-## Sistema Admnistrativo
+## Sistema Administrativo
+(disponivel apenas em localhost)
 
 ![](admnistrativo.png)
 
